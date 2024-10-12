@@ -25,26 +25,13 @@
             "label": "Flavor",
             "placeholder": "",
             "options": [
-              "lemonLime",
-              "grape",
-              "blackCherry",
-              "strawberryLemonade",
-              "watermelon"
+              "lovelyLemonLime",
+              "sourFaceGrape",
+              "berryFineCherry",
+              "shadyStrawberry",
+              "heavenlyWatermelons"
             ],
-            "default_value": "lemonLime"
-          }
-        },
-        "texture": {
-          "type": "Select",
-          "config": {
-            "label": "Texture",
-            "placeholder": "",
-            "options": [
-              "baseColor",
-              "emissiveColor",
-              "metallicRoughness"
-            ],
-            "default_value": "baseColor"
+            "default_value": "lovelyLemonLime"
           }
         }
       },

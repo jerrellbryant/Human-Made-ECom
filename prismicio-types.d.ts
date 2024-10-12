@@ -371,26 +371,16 @@ export interface SkyDiveSliceDefaultPrimary {
    *
    * - **Field Type**: Select
    * - **Placeholder**: *None*
-   * - **Default Value**: lemonLime
+   * - **Default Value**: lovelyLemonLime
    * - **API ID Path**: sky_dive.default.primary.flavor
    * - **Documentation**: https://prismic.io/docs/field#select
    */
   flavor: prismic.SelectField<
-    "lemonLime" | "grape" | "blackCherry" | "strawberryLemonade" | "watermelon",
-    "filled"
-  >;
-
-  /**
-   * Texture field in *SkyDive → Default → Primary*
-   *
-   * - **Field Type**: Select
-   * - **Placeholder**: *None*
-   * - **Default Value**: baseColor
-   * - **API ID Path**: sky_dive.default.primary.texture
-   * - **Documentation**: https://prismic.io/docs/field#select
-   */
-  texture: prismic.SelectField<
-    "baseColor" | "emissiveColor" | "metallicRoughness",
+    | "lovelyLemonLime"
+    | "sourFaceGrape"
+    | "berryFineCherry"
+    | "shadyStrawberry"
+    | "heavenlyWatermelons",
     "filled"
   >;
 }

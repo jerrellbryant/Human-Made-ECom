@@ -28,7 +28,7 @@ const BigText = ({ slice }: BigTextProps): JSX.Element => {
         <span className="inline-block max-md:text-[27vw]">makes</span>
         <span className="inline-block max-md:text-[40vw]">you</span>
       </div>
-      <div className="text-[32vw]">Smile</div>
+      <div className="text-[32vw]">BUFF</div>
     </h2>
     </section>
   );

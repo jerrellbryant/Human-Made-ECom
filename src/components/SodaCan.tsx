@@ -1,16 +1,15 @@
 "use client";
-
 import { useGLTF, useTexture } from "@react-three/drei";
 import * as THREE from "three";
 
 useGLTF.preload("/Soda-can.gltf");
 
 const flavorTextures = {
-  lemonLime: "/labels/lemon-lime.png",
-  grape: "/labels/grape.png",
-  blackCherry: "/labels/cherry.png",
-  strawberryLemonade: "/labels/strawberry.png",
-  watermelon: "/labels/watermelon.png",
+  lovelyLemonLime: "/labels/lemon-lime.png",
+  sourFaceGrape: "/labels/grape.png",
+  berryFineCherry: "/labels/cherry.png",
+  shadyStrawberry: "/labels/strawberry.png",
+  heavenlyWatermelons: "/labels/watermelon.png",
 };
 
 const metalMaterial = new THREE.MeshStandardMaterial({
@@ -25,7 +24,7 @@ export type SodaCanProps = {
 };
 
 export function SodaCan({
-  flavor = "blackCherry",
+  flavor = "berryFineCherry",
   scale = 2,
   ...props
 }: SodaCanProps) {
@@ -34,11 +33,11 @@ export function SodaCan({
   const labels = useTexture(flavorTextures);
   
   // Fixes upside down labels
-  labels.strawberryLemonade.flipY = false;
-  labels.blackCherry.flipY = false;
-  labels.watermelon.flipY = false;
-  labels.grape.flipY = false;
-  labels.lemonLime.flipY = false;
+  labels.shadyStrawberry.flipY = false;
+  labels.berryFineCherry.flipY = false;
+  labels.heavenlyWatermelons.flipY = false;
+  labels.sourFaceGrape.flipY = false;
+  labels.lovelyLemonLime.flipY = false;
 
   const label = labels[flavor];
 

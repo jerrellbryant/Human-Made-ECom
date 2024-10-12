@@ -87,23 +87,23 @@ export default function Scene({}: Props) {
         // Rotate can group
             .to(groupRef.current.rotation, {y: Math.PI * 2})
 
-              // Can 1 - black cherry
+              // Can 1 - shadyStrawberry 
             .to(can1Ref.current.position, {x: -0.2, y: -0.7, z: -2}, 0)
             .to(can1Ref.current.rotation, {z: 0.3}, 0)
 
-             // Can 2 - Lemon Lime
+             // Can 2 - heavenlyWatermelons 
             .to(can2Ref.current.position, {x: 1, y: -0.2, z: -1}, 0)
             .to(can2Ref.current.rotation, {z:0}, 0)
 
-             // Can 3 - Grape
+             // Can 3 - sourFaceGrape
             .to(can3Ref.current.position, {x: -0.3, y: 0.5, z: -1}, 0)
             .to(can3Ref.current.rotation, {z:-0.1},0)
 
-             // Can 4 - Strawberry Lemonade
+             // Can 4 - berryFineCherry
             .to(can4Ref.current.position, {x:0, y:-.3, z:.5}, 0)
             .to(can4Ref.current.rotation, {z: .3}, 0)
 
-             // Can 5 - Watermelon
+             // Can 5 - lovelyLemonLime
             .to(can5Ref.current.position, {x:.3, y:.5, z: -.5}, 0)
             .to(can5Ref.current.rotation, {z: -.25}, 0)
 
@@ -114,19 +114,19 @@ export default function Scene({}: Props) {
   return (
     <group ref={groupRef}>
         <group ref={can1GroupRef}>
-            <FloatingCan ref={can1Ref} flavor={"blackCherry"} floatSpeed={FLOAT_SPEED}/>
+            <FloatingCan ref={can1Ref} flavor={"shadyStrawberry"} floatSpeed={FLOAT_SPEED}/>
         </group>
         <group ref={can2GroupRef}>
-            <FloatingCan ref={can2Ref} flavor={"lemonLime"} floatSpeed={FLOAT_SPEED}/>
+            <FloatingCan ref={can2Ref} flavor={"heavenlyWatermelons"} floatSpeed={FLOAT_SPEED}/>
         </group>
         <group>
-            <FloatingCan ref={can3Ref} flavor={"grape"} floatSpeed={FLOAT_SPEED}/>
+            <FloatingCan ref={can3Ref} flavor={"sourFaceGrape"} floatSpeed={FLOAT_SPEED}/>
         </group>
         <group>
-            <FloatingCan ref={can4Ref} flavor={"strawberryLemonade"} floatSpeed={FLOAT_SPEED}/>
+            <FloatingCan ref={can4Ref} flavor={"berryFineCherry"} floatSpeed={FLOAT_SPEED}/>
         </group>
         <group>
-            <FloatingCan ref={can5Ref} flavor={"watermelon"} floatSpeed={FLOAT_SPEED}/>
+            <FloatingCan ref={can5Ref} flavor={"lovelyLemonLime"} floatSpeed={FLOAT_SPEED}/>
         </group>
 
 

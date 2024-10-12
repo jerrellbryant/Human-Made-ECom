@@ -10,12 +10,7 @@
 			},
 			"flavor": {
 				"__TYPE__": "FieldContent",
-				"value": "lemonLime",
-				"type": "Select"
-			},
-			"texture": {
-				"__TYPE__": "FieldContent",
-				"value": "baseColor",
+				"value": "lovelyLemonLime",
 				"type": "Select"
 			}
 		},
